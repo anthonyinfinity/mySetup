@@ -1,0 +1,2 @@
+# mySetup
+debian setup 
