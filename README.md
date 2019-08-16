@@ -1,2 +1,2 @@
 # mySetup
-debian setup 
+MacOSX setup and Debian kali setup
