@@ -1,0 +1,38 @@
+Host home
+    VisualHostKey yes
+
+Host cloud*
+    StrictHostKeyChecking no
+    UserKnownHostsFile /dev/null
+    LogLevel QUIET
+
+Host *
+    StrictHostKeyChecking ask
+    UserKnownHostsFile ~/.ssh/known_hosts
+    LogLevel INFO
+    ServerAliveInterval 120
+
+# example.com server
+Host example.com
+IdentityFile ~/.ssh/example
+
+# Personal GitHub account
+Host github.com
+ HostName github.com
+ User git
+ AddKeysToAgent yes
+ UseKeychain yes
+ IdentityFile ~/.ssh/git
+###
+
+Host example.com
+  RemoteForward 52698 127.0.0.1:52698
+  HostName 192.168.1.101
+  User gcp
+  Port 22
+  UserKnownHostsFile /dev/null
+  StrictHostKeyChecking no
+  PasswordAuthentication no
+  IdentityFile ~/.ssh/example
+  IdentitiesOnly yes
+  LogLevel FATAL
