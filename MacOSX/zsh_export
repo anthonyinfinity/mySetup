@@ -1,0 +1,31 @@
+# My exports
+LANG="en_US.UTF-8"
+LC_COLLATE="C"
+LC_CTYPE="UTF-8"
+LC_MESSAGES="C"
+LC_MONETARY="C"
+LC_NUMERIC="C"
+LC_TIME="C"
+LC_ALL="en_US.UTF-8"
+
+if [[ -z "$LC_ALL" ]]; then
+  export LC_ALL='en_US.UTF-8'
+fi
+
+# sbin
+export PATH="/usr/local/sbin:$PATH"
+export JAVA_HOME="$HOME/Library/Java/JavaVirtualMachines/jdk-11.0.1.jdk/Contents/Home/bin/java"
+if which jenv > /dev/null; then eval ; fi
+
+# Python stuff
+export PATH="$HOME/Library/Python/3.7/bin:$PATH"
+# pipx
+export PATH="~/.local/bin:$PATH"
+
+# Created by `userpath` on 2019-08-16 11:30:51
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+fi
+
+# Created by `userpath` on 2019-08-16 19:20:20
+export PATH="$PATH:$HOME/.local/bin"

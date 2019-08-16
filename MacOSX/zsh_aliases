@@ -1,0 +1,18 @@
+# My aliases
+alias zshconfig="mate ~/.zshrc"
+#alias ohmyzsh="mate ~/.oh-my-zsh"
+
+alias repos='cd $HOME/repos'
+alias rot='cd $HOME/Documents/ROT'
+
+alias updatedb='sudo /usr/libexec/locate.updatedb'
+alias vg='vagrant'
+alias dk='docker '
+alias dkstat="docker ps; docker ps -a; docker network ls | sed -n '1!p'"
+alias intellij="open /Applications/IntelliJ\ IDEA\ CE.app/"
+alias pycharm="open /Applications/PyCharm CE with Anaconda plugin.app"
+alias tma="tmux attach-session -t "
+alias ff="find $HOME -name "
+alias ff-everywhere="sudo find / -name "
+alias dtclient='sudo open /Applications/dynatrace\ client\ 7.2.app'
+alias vboxm='VBoxManage '
